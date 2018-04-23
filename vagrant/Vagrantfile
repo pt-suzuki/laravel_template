@@ -78,6 +78,11 @@ Vagrant.configure("2") do |config|
       chef.add_recipe "yumupdate"
       chef.add_recipe "nginx"
       chef.add_recipe "php"
-  end
+      chef.add_recipe "yum_install"
+ end
+  
+  config.vm.provision "shell",
+    run: "always",
+    inline: "setenforce 0"
 
 end
