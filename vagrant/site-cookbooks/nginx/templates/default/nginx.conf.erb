@@ -41,6 +41,7 @@ http {
         server_name  example.com;
         root         /home/webmaster/public;
         index        index.php index.html index.htm;
+	try_files $uri $uri/ /index.php;
 
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
@@ -62,7 +63,7 @@ http {
             fastcgi_index  index.php;
 
             include        fastcgi_params;
-            fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_param  SCRIPT_FILENAME $document_root/$fastcgi_script_name;
             fastcgi_param  PATH_INFO $fastcgi_path_info;
             fastcgi_param  PATH_TRANSLATED $document_root$fastcgi_path_info;
         }
