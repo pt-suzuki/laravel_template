@@ -35,4 +35,16 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'twitter' => [
+        'client_id'     => env('TWITTER_API_KEY'),
+        'client_secret' => env('TWITTER_API_SECRET'),
+        'redirect'      => env('TWITTER_CALLBACKURL'),
+    ],
+
+    'google' => [
+        'client_id'     => env('GOOGLE_API_KEY'),
+        'client_secret' => env('GOOGLE_API_SECRET'),
+        'redirect'      => env('GOOGLE_CALLBACKURL'),
+    ],
+
 ];

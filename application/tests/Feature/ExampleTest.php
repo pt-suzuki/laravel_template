@@ -12,10 +12,10 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testログイン画面アクセスエラーテスト()
     {
-        $response = $this->get('/');
+        $response = $this->get('/login');
 
-        $response->assertStatus(200);
+        $response->assertStatus(401);
     }
 }
