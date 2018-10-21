@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', 'TestController@index');
+Auth::routes();
 
-Route::get('/test', 'TestController@index');
+Route::get('/{any}', function () {
+    return view('layouts.app');
+})->where('any', '.*');
