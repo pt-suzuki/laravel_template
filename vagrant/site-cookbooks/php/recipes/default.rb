@@ -1,6 +1,6 @@
 execute "php" do
   user "root"
-  command "yum -y install --enablerepo=remi,remi-php71 php php-cli php-common php-devel php-fpm php-gd php-mbstring php-mysqlnd php-pdo php-pear php-pecl-apcu php-soap php-xml php-xmlrpc"
+  command "yum -y install --enablerepo=remi,remi-php71 php php-cli php-common php-pgsql php-devel php-fpm php-gd php-mbstring php-mysqlnd php-pdo php-pear php-pecl-apcu php-soap php-xml php-xmlrpc"
   action :run
 end
 

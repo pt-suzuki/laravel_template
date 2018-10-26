@@ -38,6 +38,6 @@
         "vue-csrf": "^1.1.0",
         "vue-loader": "^13.7.2",
         "vue-property-decorator": "^7.2.0",
-        "vue-template-compiler": "^2.5.17",
+        "vue-template-compiler": "^2.5.17"
     }
 }

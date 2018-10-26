@@ -8857,7 +8857,7 @@ var startTagOpen = new RegExp(("^<" + qnameCapture));
 var startTagClose = /^\s*(\/?)>/;
 var endTag = new RegExp(("^<\\/" + qnameCapture + "[^>]*>"));
 var doctype = /^<!DOCTYPE [^>]+>/i;
-// #7298: escape - to avoid being pased as HTML comment when inlined in page
+// #7298: escape - to avoid being pased as HTML comment when inlined in pages
 var comment = /^<!\--/;
 var conditionalComment = /^<!\[/;
 
@@ -14323,7 +14323,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/page/Login.vue"
+Component.options.__file = "resources/assets/js/components/pages/Login.vue"
 
 /* hot reload */
 if (false) {(function () {
