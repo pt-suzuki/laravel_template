@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-    <div id="app">
+    <div id="wrapper">
 
     </div>
 </body>
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="{{ mix('js/app.js') }}" defer></script>
 </html>

@@ -6,8 +6,15 @@ export module PageUri{
 
     export module AUTH{
         export const LOGIN =   "/login"
-        export const LOGOUT =   ""
     }
 
+    export module DOCUMENT{
+        const DOCUMENT = "/document"
+        export const BASIC = DOCUMENT
+        export const CHECK_SHEET = DOCUMENT + "/check_sheet"
+    }
 
+    export const DASH_BORD = "/dash_bord"
+    export const TEST = "/test"
+    export const OTHER = "/other"
 }
