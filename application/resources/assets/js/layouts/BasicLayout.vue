@@ -35,7 +35,7 @@
     import {PageUri} from "../enums/PageUri"
     import AbstractPresenter from "./AbstractPresenter";
     import Component from "vue-class-component";
-    import Loading from "../components/Loading.vue"
+    import Loading from "../components/PageLoading.vue"
 
     @Component({
         components:{

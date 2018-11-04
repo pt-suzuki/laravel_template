@@ -8,7 +8,7 @@ import Other from './pages/DocumentList.vue';
 import DocumentTabLayout from './layouts/DocumentCreateTabLayout.vue'
 import Document from './pages/DocumentCreate/BasicSheet.vue';
 import CheckSheet from './pages/DocumentCreate/CheckSheet.vue';
-import Loading from './components/Loading.vue';
+import Loading from './components/PageLoading.vue';
 import DocumentDetail from './pages/DocumentDetail.vue';
 
 Vue.use(VueRouter)

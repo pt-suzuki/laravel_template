@@ -32,7 +32,7 @@
 import AbstractPresenter from '../layouts/AbstractPresenter'
 import Component from "vue-class-component";
 import {PageUri} from "../enums/PageUri";
-import Loading from "../components/Loading.vue";
+import Loading from "../components/PageLoading.vue";
 
 @Component({
     components: {
