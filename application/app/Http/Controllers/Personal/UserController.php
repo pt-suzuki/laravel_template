@@ -41,12 +41,11 @@ class UserController extends Controller
      * @since 2018/5/1
      * @author takuya
      * @param  int  $id
-     * @return JsonResponse
      */
-    public function show(int $id)
+    public function show()
     {
-        $user = User::find($id);
-        return $user->toJson();
+
+        return "OK";
     }
 
     /**

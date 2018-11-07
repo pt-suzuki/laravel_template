@@ -21,7 +21,7 @@
         }
     })
     export default class ListLoadingPresenter extends AbstractPresenter{
-        text:string="ロード中..."
+        text?:string
         show:boolean=false
     }
 </script>

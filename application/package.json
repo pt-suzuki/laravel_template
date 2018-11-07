@@ -16,14 +16,17 @@
         "cross-env": "^5.2.0",
         "cross-spawn": "^6.0.5",
         "jquery": "^3.2.1",
+        "moment": "^2.22.2",
         "nuxt": "^1.4.2",
         "nuxt-class-component": "^1.2.1",
         "rails-ujs": "^5.2.1",
         "tslint": "^5.11.0",
         "uglifyjs-webpack-plugin": "^1.3.0",
         "vue": "^2.5.17",
+        "vue-datatable": "^1.0.4",
         "vue-js-modal": "^1.3.26",
         "vue-modal-dialog": "^0.2.2",
+        "vue-moment": "^4.0.0",
         "vue-router": "^3.0.1"
     },
     "devDependencies": {

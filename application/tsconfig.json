@@ -16,6 +16,9 @@
     ]
   },
   "include": [
-    "resources/assets/js/**/*"
+    "resources/assets/js/**/*",
+    "src/**/*",
+    "test/**/*",
+    "custom_typings/**/*"
   ]
 }
