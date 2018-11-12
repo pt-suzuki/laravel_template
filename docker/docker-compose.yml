@@ -16,7 +16,9 @@ services:
     depends_on:
       - php
   php:
-    image: php:7.2-fpm
+    build:
+      context: ./php
+      dockerfile: Dockerfile-php-fpm
     environment:
       DB_HOST: db
     tty: true
@@ -24,8 +26,6 @@ services:
       - "9000:9000"
     volumes:
       - ../application:/var/www
-      - ./php/log:/var/log/php-fpm/
-      - ./php/conf:/etc/php-fpm.d
     links:
       - db
   db:
