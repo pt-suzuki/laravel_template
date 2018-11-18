@@ -13,10 +13,12 @@
     },
     "dependencies": {
         "@types/node": "^8.10.26",
+        "bootstrap-vue": "^2.0.0-rc.11",
         "cross-env": "^5.2.0",
         "cross-spawn": "^6.0.5",
         "jquery": "^3.2.1",
         "moment": "^2.22.2",
+        "node-sass": "^4.10.0",
         "nuxt": "^1.4.2",
         "nuxt-class-component": "^1.2.1",
         "rails-ujs": "^5.2.1",

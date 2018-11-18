@@ -8,7 +8,8 @@ RUN     useradd nginx
 RUN     mkdir -p /run/php-fpm
 RUN     curl -sS https://getcomposer.org/installer | php -- --install-dir=/tmp
 RUN     mv /tmp/composer.phar /usr/local/bin/composer
-RUN     yum -y install npm
+RUN     curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+RUN     yum -y install nodejs
 WORKDIR /var/www
 EXPOSE 9000
-ENTRYPOINT     php-fpm -F
+ENTRYPOINT php-fpm -F

@@ -26,6 +26,7 @@ services:
       - "9000:9000"
     volumes:
       - ../application:/var/www
+      - /var/www/node_modules
     links:
       - db
   db:
@@ -34,4 +35,4 @@ services:
     - "5432:15432"
     environment:
     - "POSTGRES_USER=postgres"
-    - "POSTGRES_PASSWORD=mysecretpassword1234"
+    - "POSTGRES_PASSWORD=pass"
